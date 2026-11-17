@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#110e0f">
+  <meta name="description" content="以《Fate/Zero》小圣杯为入口，探索冬木圣杯战争、七骑职阶、御主与令咒，以及不同世界线中的仪式变体。">
+  <title>圣杯战争｜冬木档案</title>
+  <link rel="icon" href="./grail-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip" href="#archive">跳到冬木编年史</a>
+  <header class="mast" id="top">
+    <a class="wordmark" href="#top"><img src="./grail-mark.svg" alt="" width="32" height="36"><span>冬木档案<small>FUYUKI ARCHIVE</small></span></a>
+    <nav aria-label="网站导航">
+      <a href="#exhibit">展厅</a><a href="#archive">冬木编年</a><a href="#branches">异闻录</a><a href="#sources">资料来源</a>
+    </nav>
+    <div class="mast-actions">
+      <div class="bgm" id="bgm" role="group" aria-label="背景音乐，count it from zero，梶浦由記" hidden>
+        <audio id="bgm-audio" src="./count-it-from-zero.mp3" preload="none" loop></audio>
+        <button class="icon-button bgm-toggle" id="bgm-toggle" type="button" aria-label="播放背景音乐" title="播放背景音乐 · count it from zero">
+          <span class="bgm-play" data-icon="play"></span><span class="bgm-pause" data-icon="pause"></span>
+        </button>
+        <label class="sr-only" for="bgm-volume">背景音乐音量</label>
+        <input id="bgm-volume" type="range" min="0" max="100" value="50">
+        <span class="bgm-level" id="bgm-level" aria-hidden="true">50%</span>
+        <span class="bgm-status sr-only" id="bgm-status" role="status"></span>
+      </div>
+      <button class="icon-button share" title="分享当前页面" aria-label="分享当前页面" data-icon="share" id="share"></button>
+    </div>
+    <span id="toast" class="toast" role="status"></span>
+  </header>
+
+  <main>
+    <section id="exhibit" class="exhibit" aria-labelledby="title">
+      <div class="stage" id="stage">
+        <div class="halo"></div><div class="light-vault"></div><div id="diagram" class="diagram"></div>
+        <div class="mist"></div><div class="altar-glow"></div>
+        <div id="viewport" class="viewport" tabindex="0" aria-label="小圣杯三维展品。方向键旋转，加减键缩放，回车查看展品。">
+          <img id="poster" class="poster" src="./grail-poster.png" alt="小圣杯静态视图，杯身为古旧铜金色，杯口留有磨痕">
+          <div id="fallback" class="fallback" hidden>三维渲染不可用 · 当前显示展品静态图</div>
+        </div>
+        <div class="caption"><span></span> 第四次圣杯战争 <b>／</b> 小圣杯</div>
+        <div class="viewer-controls" aria-label="三维视角控制">
+          <button class="icon-button" aria-label="缩小展品" title="缩小" data-action="out" data-icon="minus" disabled></button>
+          <button class="icon-button" aria-label="放大展品" title="放大" data-action="in" data-icon="plus" disabled></button>
+          <button class="icon-button" aria-label="自动旋转" aria-pressed="false" title="自动旋转" data-action="spin" data-icon="spin" disabled></button>
+          <button class="icon-button" aria-label="重置视角" title="重置视角" data-action="reset" data-icon="reset" disabled></button>
+          <button class="icon-button" aria-label="展厅动态光效" aria-pressed="false" title="切换动态光效" data-action="effects" data-icon="sparkle" disabled></button>
+        </div>
+        <div class="viewer-hint" id="viewer-hint">拖拽旋转 · 双指或滚轮缩放 · 点选展品</div>
+      </div>
+      <div class="hero-text">
+        <h1 id="title">圣杯<br class="desktop-break">战争</h1>
+        <p class="hero-en" lang="en">THE HOLY<br>GRAIL WAR</p>
+        <div class="hero-rule"></div>
+        <p class="intro">传说，圣杯可以实现愿望。冬木的魔术师为它召唤七骑从者，却并非都知道这场仪式为何而建。</p>
+        <a class="gold-button" href="#archive">查阅冬木编年 <span data-icon="arrow"></span></a>
+      </div>
+      <aside class="plaque" aria-label="展厅档案入口">
+        <div class="plaque-caption"><span>冬木市</span><span>档案室</span></div>
+        <button class="plaque-row" data-drawer="artifact"><span data-icon="cup"></span><span><strong>小圣杯</strong><small>展品与仪式</small></span><i data-icon="right"></i></button>
+        <button class="plaque-row" data-drawer="seals"><span class="red" data-icon="seal"></span><span><strong>令咒</strong><small>各仪式图样与用法</small></span><i data-icon="right"></i></button>
+        <button class="plaque-row" data-drawer="classes"><span data-icon="sword"></span><span><strong>职阶</strong><small>常规与特殊席位</small></span><i data-icon="right"></i></button>
+        <button class="plaque-row" data-drawer="masters" data-war=""><span data-icon="master"></span><span><strong>御主</strong><small>各战参战名录</small></span><i data-icon="right"></i></button>
+      </aside>
+    </section>
+
+    <section id="archive" class="archive content">
+      <header class="section-head"><div><h2>冬木编年</h2><span lang="en">THE FUYUKI CHRONICLE</span></div><p>从御三家创设仪式，到第五战的三条分支。选取届次，查看对应的记录。</p></header>
+      <div id="war-tabs" class="war-tabs" role="tablist" aria-label="冬木历次圣杯战争"></div>
+      <div id="war-record" class="war-record" role="tabpanel" tabindex="0"></div>
+      <div class="epilogue" id="epilogue"></div>
+    </section>
+    <section id="ritual" class="ritual-section content" tabindex="-1" aria-labelledby="ritual-heading">
+      <header class="section-head"><div><h2 id="ritual-heading">大圣杯如何运作</h2><span lang="en">THE RITUAL</span></div><p>从灵脉积蓄到打开通路。小圣杯在其中负责收纳，地下的大圣杯才是仪式本体。</p></header>
+      <div id="ritual-steps" class="ritual-steps"></div>
+      <div id="ritual-details" class="ritual-details"></div>
+      <div class="ritual-link"><button class="text-button" data-drawer="artifact">对照大小圣杯 <span data-icon="arrow"></span></button></div>
+    </section>
+    <section id="branches" class="branches content">
+      <header class="section-head"><div><h2>世界线异闻录</h2><span lang="en">ALTERNATE RECORDS</span></div><p>有的仪式继承了冬木的装置，有的只借用「圣杯战争」的形式。各条目按自己的世界线阅读。</p></header>
+      <div class="worldlines" id="worldlines" aria-label="世界线与仪式导航"></div>
+      <div class="filters" id="filters" aria-label="筛选战争变体"></div>
+      <div id="variant-list" class="variant-list"></div>
+      <p id="result-count" role="status" class="sr-only"></p>
+    </section>
+    <section id="sources" class="sources content">
+      <header class="section-head"><div><h2>资料来源</h2><span lang="en">REFERENCES</span></div><p>优先采用原作与官方设定。社区条目用来查找线索；年代未明、版本有别时在正文标示。</p></header>
+      <div class="source-collections" id="source-collections"></div>
+    </section>
+  </main>
+  <footer class="foot"><a class="wordmark" href="#top"><img src="./grail-mark.svg" alt="" width="26" height="30"><span>冬木档案<small>FUYUKI ARCHIVE</small></span></a><p>《Fate》世界观非官方设定展。作品、角色及相关图样权利归原权利方。</p><a href="#top">回到展厅 <span data-icon="up"></span></a></footer>
+  <dialog id="drawer" class="drawer" aria-labelledby="drawer-title">
+    <div class="drawer-head"><div><p id="drawer-kicker"></p><h2 id="drawer-title"></h2></div><button id="drawer-close" class="icon-button" data-icon="close" aria-label="关闭档案" autofocus></button></div>
+    <div id="drawer-body" class="drawer-body"></div>
+  </dialog>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
