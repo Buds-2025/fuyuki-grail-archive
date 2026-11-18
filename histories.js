@@ -1,5 +1,5 @@
 export const research = {
-  cm3: ['《Fate/complete material III》战争年表与问答（英译索引）', 'https://typemoon.fandom.com/wiki/Encyclopedia/CM3'],
+  cm3: ['《Fate/complete material III》第7页战争年表（英译转录）', 'https://typemoon.fandom.com/wiki/Encyclopedia/CM3'],
   zeroCast: ['《Fate/Zero》官方角色资料', 'https://www.fate-zero.jp/characters/'],
   ubwStory: ['Aniplex｜Unlimited Blade Works 官方分集档案', 'https://www.fatestaynightusa.com/ubw/sp/story/25.html'],
   hfStory: ['Aniplex｜Heaven’s Feel 第三章官方剧情介绍', 'https://www.fatestaynightusa.com/story-chara/'],
@@ -13,6 +13,7 @@ export const research = {
   fakeStart: ['《Fate/strange Fake》官网｜雪原开战', 'https://fatesf-anime.com/story/?id=ep01'],
   fakeHospital: ['《Fate/strange Fake》官网｜医院战斗', 'https://fatesf-anime.com/story/?id=ep09'],
   extraRecord: ['TYPE-MOON｜《Fate/EXTRA Record》官方世界设定', 'https://fate-extra-record.typemoon.com/en/world/'],
+  extraRounds: ['《Fate/EXTRA》PSP原版｜玩家分周实玩记录（辅助资料）','https://gamefaqs.gamespot.com/psp/975333-fate-extra/faqs/81110/walkthrough'],
   extraManual: ['Ghostlight｜《Fate/EXTRA》发行版手册', 'https://fateextra.ghostlight.uk.com/manuals/Fate-Extra-UK-Manual.pdf'],
   extraCcc: ['TYPE-MOON Wiki｜《Fate/EXTRA CCC》角色与契约索引（日文）', 'https://typemoon.wiki.cre.jp/wiki/Fate/EXTRA_CCC'],
   encore: ['《Fate/EXTRA Last Encore》官方角色档案', 'https://fate-extra-lastencore.com/character/'],
@@ -41,10 +42,10 @@ export const research = {
 export const warHistories = {
   I: {
     chronology: [
-      ['1790年代 · 在冬木选址','爱因兹贝伦与玛奇里赴日，与冬木当地的远坂家合作。御三家需要一处能持续供给仪式的灵地，以重现第三魔法并打开通向根源的道路。'],
+      ['1790年代 · 在冬木筹备仪式','爱因兹贝伦与玛奇里赴日，与冬木当地的远坂家合作。御三家需要一处能持续供给仪式的灵地，以重现第三魔法并打开通向根源的道路。'],
       ['建立大圣杯','爱因兹贝伦的羽斯缇萨成为大圣杯仪式的核心，玛奇里参与开发召唤和约束从者的术式，远坂家提供土地。地下的仪式开始积蓄从灵脉取得的魔力。'],
       ['将召唤扩大到家族之外','完成仪式需要多骑英灵，三家招揽外来的魔术师，并以能实现愿望的圣杯为号召。外来者追求各自的愿望，创设者则各有对仪式的打算。'],
-      ['共同仪式演变为争夺','参战者在圣杯归属上无法达成一致。第一战的召唤名单、对战与退场次序缺乏公开记录，大圣杯则继续留在冬木。']
+      ['1800年代 · 第一次争夺','参战者在圣杯归属上无法达成一致。第一战的召唤名单、对战与退场次序缺乏公开记录，大圣杯则继续留在冬木。']
     ],
     refs: ['cm','cm3','fsn','apo']
   },
@@ -71,7 +72,7 @@ export const warHistories = {
       ]],
       ['外典世界｜大圣杯被移走',[
         ['裁定者占据异常席位','爱因兹贝伦召唤天草四郎时贞。此处的Ruler由参战家族召唤，与罗马尼亚大战由圣杯召来的贞德职责有别。'],
-        ['达尼克夺走大圣杯','容器毁坏后，达尼克借外部势力夺取地下的大圣杯，并将它转移到罗马尼亚。天草接触大圣杯后获得了肉身。'],
+        ['达尼克夺走大圣杯','在这条分支中，达尼克借外部势力夺取冬木的大圣杯，并将它转移到罗马尼亚。天草接触大圣杯后获得了肉身。'],
         ['分岔延续','冬木失去原系统，后续没有本传的第四、第五战。仿式在世界多地扩散，原大圣杯后来启动红黑两阵营的大战。']
       ]]
     ],
@@ -84,8 +85,9 @@ export const warHistories = {
       ['教会宣布暂时停战','Caster与龙之介的行动威胁隐秘原则。监督言峰璃正悬赏，以额外令咒为报酬，要求各方优先讨伐Caster。'],
       ['未远川讨伐','Caster召出巨大海魔。多方暂时合作，Lancer折断宝具解除Saber的伤势，Saber得以使用圣剑消灭海魔。']
     ],
-    routes: [['第四战后半与结局',[
-      ['Lancer阵营瓦解','索拉曾为Lancer供魔，后来取得指挥权。肯尼斯重新取得令咒后受切嗣胁迫，命Lancer自尽。原本分置的契约、供魔与令咒最终均告中断。'],
+    routes: [['关键战局与结局',[
+      ['百貌的侦察与王之宴','远坂宅邸一役中，Archer只击倒了百貌哈桑的一具分身。绮礼继续利用其余分身侦察，直到王之宴上，Rider以「王之军势」歼灭Assassin。'],
+      ['Lancer阵营瓦解','索拉为迪尔姆德供魔，肯尼斯原先持有令咒。讨伐Caster后，监督者璃正向肯尼斯补发一划。切嗣以索拉为人质迫使肯尼斯用它命令Lancer自尽；切嗣本人立下的誓约并未约束舞弥。'],
       ['Archer更换御主','原属Assassin阵营的绮礼背叛时臣，并与Archer再订契约。绮礼曾作为时臣的暗中协力者，此后开始追求自己的目的。'],
       ['末段淘汰','Rider在与Archer的决战中败亡。韦伯此前将三划令咒全部用于激励Rider，仍被他接纳为臣下。Saber在最后阶段击败Berserker。'],
       ['小圣杯显现','爱丽丝菲尔作为容器收纳败退从者。切嗣接触圣杯内的意志后拒绝许愿，连续使用剩余两划令咒，命Saber破坏金色容器。'],
@@ -107,14 +109,16 @@ export const warHistories = {
       ]],
       ['Unlimited Blade Works｜远坂凛路线',[
         ['Caster争夺契约','Caster依托柳洞寺与葛木行动，用宝具切断Saber原有契约，一度控制Saber。Archer也在这场争夺中取得行动空间。'],
-        ['契约易手与真名揭示','局势反转后，凛与Saber订约。士郎与真名为EMIYA的Archer对决。吉尔伽美什击败Berserker，并以魔术方式将慎二用作圣杯容器。'],
-        ['分头处理圣杯与敌手','凛救出慎二，Saber破坏显现的圣杯。士郎与吉尔伽美什交锋，Archer在最终阶段出手。']
+        ['契约易手与真名揭示','凛与获得自由的Saber订约。士郎面对的是凛在第五战召唤的Archer，其真名为EMIYA。击败Berserker的吉尔伽美什则是第四战后留在现世的Archer。慎二后来被用作圣杯容器。'],
+        ['分头处理圣杯与敌手','凛救出慎二，Saber破坏显现的圣杯。士郎与吉尔伽美什交锋，EMIYA在最后关头射中吉尔伽美什。'],
+        ['两种尾声','True End中，Saber告别现世，士郎与凛同行；Good End中，凛继续供魔，Saber得以留下。']
       ]],
       ['Heaven’s Feel｜间桐樱路线',[
         ['真正的Assassin与黑影','间桐脏砚利用柳洞寺的Assassin召来咒腕哈桑，黑影开始吞没或污染从者。Saber后来以黑化姿态出现。'],
         ['容器的两种来历','伊莉雅是爱因兹贝伦为当届战争准备的容器。脏砚另在樱体内利用四战圣杯碎片培养了不完全的容器。樱与圣杯污染的联结成为战局核心。'],
-        ['深入大圣杯所在洞窟','Rider与士郎击败黑化Saber。士郎用Rule Breaker解除樱与黑影的关键联系，并与绮礼交手。原作正常结局与真实结局对关闭仪式的代价有不同记载。'],
-        ['真实结局','伊莉雅用第三魔法相关术式救下士郎的灵魂并关闭通往大圣杯的仪式。它与破坏当届小圣杯是不同层次的处理。']
+        ['深入大圣杯所在洞窟','Rider与士郎击败黑化Saber。士郎投影美狄亚的宝具Rule Breaker，切断樱与安哥拉曼纽的联系。两种结局在洞窟中分开。'],
+        ['通常结局（Normal End）','士郎用最后一次投影摧毁大圣杯，没有回到樱身边。尾声从樱的视角写她此后漫长的等待。'],
+        ['真实结局（True End）','士郎在洞窟中与绮礼交手。伊莉雅随后关闭孔洞，以第三魔法保住士郎的灵魂。后来，士郎以人偶为新的身体，重新与樱生活。']
       ]]
     ],
     refs: ['fsn','ubw','ubwStory','hf','hfStory','cm3','wiki']
@@ -128,7 +132,7 @@ export const variantHistories = {
       ['冬木系统转移','达尼克将第三战取得的大圣杯移至图利法斯。尤格多米雷尼亚以大圣杯为筹码与魔术协会对立。'],
       ['红黑对阵','黑方率先召满七骑，协会借系统紧急机制召唤红方。裁定者贞德被圣杯召来，向两方行使有限监督权。'],
       ['齐格脱离工房','一名原本用于供魔的人造人逃出工房。黑之Saber为救他献出心脏，齐格由此获得影响战局的能力，后来与阿斯托尔福订约。'],
-      ['大圣杯被转移到庭园','红之Assassin以空中庭园夺走大圣杯。黑之Lancer离开罗马尼亚后失去当地加成。达尼克以令咒推动他使用自己拒绝的宝具，执念也随之侵入从者。'],
+      ['大圣杯被转移到庭园','红之Assassin以空中庭园夺走大圣杯。黑之Lancer进入敌方的空中庭园，失去在自己领地内的优势。达尼克以令咒推动他使用自己拒绝的宝具，执念也随之侵入从者。'],
       ['两方阵营重新排列','天草四郎已接管红方多组主从关系，计划借第三魔法使全人类的灵魂物质化。原阵营边界随大圣杯去向、背叛和新契约发生变化。'],
       ['庭园决战与仪式关闭','剩余参战者攻入庭园。莫德雷德与狮子劫对上塞弥拉弥斯，贞德走向大圣杯所在处。齐格阻止天草完成计划，并以龙的姿态将大圣杯带往世界里侧。']
     ],
@@ -156,10 +160,12 @@ export const variantHistories = {
     stages:[
       ['Moon Cell召集参加者','灵子化的参赛者进入SE.RA.PH。正赛以128名御主展开，淘汰过程由月面系统安排。'],
       ['第一至第三轮','岸波白野与选定的从者先后对上间桐慎二与德雷克、丹与罗宾汉、爱丽丝与童谣。每轮包括情报收集、准备和决战。'],
-      ['赛程中段的分岔','与远坂凛、拉尼Ⅷ有关的抉择改变中盘对手。兰鲁君与门司加藤各出现在相应路线，凛或拉尼也会成为一轮对手。'],
-      ['第六轮与最后一轮','第六轮对手是尤里乌斯及李书文。最后一轮面对雷欧纳多与高文，胜者才获准进入Moon Cell内部。'],
-      ['抵达中枢','胜者取得访问Moon Cell中枢的资格。《CCC》涉及月之背侧的异常事件，《Last Encore》另有起点与结局。']
-    ],refs:['extraRecord','extraManual','moonRoster','encore']
+      ['第四轮 · 第一次分岔','第三周末救下凛，第四轮就会遇到兰鲁君与Lancer弗拉德三世；救下拉尼Ⅷ，则面对门司加藤与Berserker阿尔奎特。'],
+      ['第五轮 · 尤里乌斯','两条路线在此遇到同一组对手：尤里乌斯与Assassin李书文。'],
+      ['第六轮 · 凛或拉尼Ⅷ','救下凛的路线对阵拉尼Ⅷ与Berserker吕布；救下拉尼的路线对阵凛与Lancer库·丘林。'],
+      ['第七轮 · 决赛','雷欧纳多与Saber高文守在淘汰赛的最后一轮。击败他们之后，胜者取得访问中枢的资格。'],
+      ['抵达中枢','白野在中枢面对特维斯与Saver。这场战斗发生在七轮淘汰赛结束之后。《CCC》涉及月之背侧的异常事件，《Last Encore》另有起点与结局。']
+    ],refs:['extraRecord','extraManual','extraRounds','moonRoster','encore']
   },
   '东京两次圣杯战争': {
     roster:'tokyo91',

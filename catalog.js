@@ -42,7 +42,7 @@ export function sealPanel(refs, spoiler) {
       ${searchField('检索','持有者、仪式或职阶')}
       <label class="segment-switch"><input type="checkbox" name="segments"> 显示分划配色</label>
     </form>${results}
-    <p class="archive-note">图样据参考资料描绘。三色用于说明图集的分划，角色画面中的实际颜色以作品为准。</p>
+    <p class="archive-note">职阶按持有者在相应战争或路线中实际缔结的契约标注。同一人可以先后与不同职阶缔约，不能仅凭令咒的形状推断职阶。图样据资料描绘，三色仅用于区分图形分划。</p>
     <h3>令咒怎样生效</h3>
     <dl class="detail-terms">${sealMechanics.map(([term, text])=>`<div><dt>${term}</dt><dd>${text}</dd></div>`).join('')}</dl>
     <details class="dossier-disclosure"><summary>查看五个使用案例 · 含剧透</summary>

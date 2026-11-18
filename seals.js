@@ -35,7 +35,7 @@ const atlasEntries = [
   ['美狄亚','冬木第五战及后续',['Assassin','Saber'],'她自身是Caster。作为召唤者与Assassin相联，UBW路线还曾夺取Saber的契约。'],
   ['兰鲁君','EXTRA',['Lancer'],'月面正赛中盘的路线对手。'],
   ['远坂时臣','冬木第四战',['Archer'],'第四战的起始契约。'],
-  ['远坂凛','冬木第五战及后续',['Archer','Saber','Lancer'],'冬木初始为Archer，UBW后期与Saber结契。Lancer对应《EXTRA》月面。'],
+  ['远坂凛','冬木第五战及后续',['Archer','Saber'],'冬木第五战起始契约为Archer，UBW路线后期另与Saber结契。《EXTRA》中与Lancer缔约的是月面世界的同名人物，另见月面参战名录。'],
   ['露维亚瑟琳塔·艾德费尔特','附录',[],'《Fate/unlimited codes》图样。','职阶未明确'],
   ['拉尼Ⅷ','EXTRA',['Berserker'],'月面正赛的参战契约。'],
   ['桑格雷德·法恩','Prototype',['Berserker','Saber'],'1999年东京第二战。初始契约为Berserker，后曾介入Saber的契约。']

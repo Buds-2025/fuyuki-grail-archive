@@ -4,7 +4,7 @@ export const sources = {
   ubw: ['TYPE-MOON｜Unlimited Blade Works 导读', 'https://typemoon.com/products/f-sn/introduction/ubw/'],
   zero: ['TYPE-MOON｜《Fate/Zero》原著导读', 'https://typemoon.com/contents/9ncnes/ds0pbh'],
   zguide: ['《Fate/Zero》官网｜圣杯战争术语及人物关系', 'https://www.fate-zero.jp/news/index.html?p=56'],
-  zstory: ['《Fate/Zero》官网｜第24话「最后的令咒」', 'https://www.fate-zero.jp/story/'],
+  zstory: ['《Fate/Zero》官网｜分集记录（第11、16、24、25话）', 'https://www.fate-zero.jp/story/index.html'],
   apo: ['TYPE-MOON｜《Fate/Apocrypha》第1卷试阅', 'https://www.typemoon.com/products/tmbooks/apocrypha/Fap01_trial.pdf'],
   apoworld: ['《Fate/Apocrypha》官网｜世界设定', 'https://fate-apocrypha.com/world/column/'],
   fake: ['TYPE-MOON｜《Fate/strange Fake》第1卷介绍', 'https://www.typemoon.com/information/info.html'],
@@ -33,7 +33,7 @@ export const sources = {
 };
 
 export const wars = [
-  {id:'first', no:'I', period:'18世纪末起', name:'第一次圣杯战争', title:'御三家建立仪式', mark:'创设', intro:'爱因兹贝伦、远坂与玛奇里在冬木联手，建立了后来称为圣杯战争的仪式。对外的奖品是实现愿望的圣杯，御三家真正追求的是通往「根源」的道路。', facts:[['地点','日本·冬木'],['参与者','爱因兹贝伦、远坂、玛奇里'],['资料状况','原作回溯；完整名单未公开']], prose:['爱因兹贝伦提供仪式的核心，远坂提供冬木灵地，玛奇里（后来改姓间桐）参与建立御主约束从者的体系。冬之圣女羽斯缇萨与大圣杯的成立密切相关。','早期仪式缺少后来的成文规则。参加者没有就如何分享成果达成一致，合作很快演变成争夺。站内不强行为这一战指定公历年份，也不把后续定型的规则逐条倒推到此时。'], secret:'仪式未达到创设者的目的。留在冬木地下的系统得以继续积蓄魔力，下一次争夺仍以同一基础举行。', refs:['fsn','apo','material','wiki']},
+  {id:'first', no:'I', period:'1800年代', name:'第一次圣杯战争', title:'御三家建立仪式', mark:'创设', intro:'爱因兹贝伦、远坂与玛奇里在冬木联手，建立了后来称为圣杯战争的仪式。设定集将筹备与第一次争夺分列：1790年代是三家在冬木着手准备的时期，第一次战争列于1800年代。', facts:[['地点','日本·冬木'],['参与者','爱因兹贝伦、远坂、玛奇里'],['资料状况','原作回溯；完整名单未公开']], prose:['爱因兹贝伦提供仪式的核心，远坂提供冬木灵地，玛奇里（后来改姓间桐）参与建立御主约束从者的体系。冬之圣女羽斯缇萨与大圣杯的成立密切相关。','早期仪式缺少后来的成文规则。参加者没有就如何分享成果达成一致，合作很快演变成争夺。站内不强行为这一战指定公历年份，也不把后续定型的规则逐条倒推到此时。'], secret:'仪式未达到创设者的目的。留在冬木地下的系统得以继续积蓄魔力，下一次争夺仍以同一基础举行。', refs:['fsn','apo','material','wiki']},
   {id:'second', no:'II', period:'1860年代', name:'第二次圣杯战争', title:'争夺再次失控', mark:'规则形成', intro:'在大圣杯重新蓄积魔力后，冬木再度举行仪式。第二战的留存记载很少，后续档案也没有给出可核的七组名单。', facts:[['地点','日本·冬木'],['核心问题','参战者争斗缺乏有效约束'],['资料状况','设定集回溯；具体过程不详']], prose:['冬木仪式常被描述为约六十年一轮。这个周期取决于大圣杯的魔力积蓄，属于通常条件，第五战的间隔就是例外。','此时的争夺强化了统一规则和监督的需要。此后冬木圣杯战争逐渐采用更稳定的参战形式，并由圣堂教会派出监督者。'], secret:'这一战依然没有产生获得圣杯的胜者。精确年份、完整御主名录和各方退场顺序均不作为定论。', refs:['fsn','zguide','material']},
   {id:'third', no:'III', period:'1930年代', name:'第三次圣杯战争', title:'冬木与外典的分岔', mark:'世界线分歧', intro:'第三战是理解后续多条世界线的关键。第三次仪式之后，冬木主线与《Fate/Apocrypha》记录的大圣杯去向不同。', facts:[['地点','日本·冬木'],['主要变数','爱因兹贝伦的非常规召唤'],['资料状况','原作回溯与外典对照']], prose:['从者以职阶容器现身，冬木通常设置七个职阶。非常规召唤可以改写一个席位；第三战的两条记录展示了不同选择带来的后果。','后两次冬木战争承接《Fate/stay night》一侧的结果。《Fate/Apocrypha》中，大圣杯在这一代仪式后脱离御三家掌控，这条冬木序列没有照常延续。'], secret:'本传一侧召唤了复仇者安哥拉曼纽；他退场后被圣杯收纳，污染了大圣杯。外典一侧，爱因兹贝伦召唤的是裁定者天草四郎时贞；达尼克夺走大圣杯并将它移往罗马尼亚。二者是两条记录，不是同一场仪式中的先后事件。', refs:['hf','apo','apoworld','material']},
   {id:'fourth', no:'IV', period:'约1994年', name:'第四次圣杯战争', title:'第四战与冬木大火', mark:'Fate/Zero', intro:'在第五战约十年前，七组参战者于冬木争夺圣杯。爱因兹贝伦委托卫宫切嗣以御主身份参战，爱丽丝菲尔则承担了与小圣杯有关的职责。', facts:[['地点','日本·冬木'],['监督','言峰璃正'],['代表记录','《Fate/Zero》']], prose:['正式席位仍以七骑组织。起始契约包括卫宫切嗣与Saber、远坂时臣与Archer、肯尼斯与Lancer、韦伯与Rider等，实际供魔者和契约变动需要单独记录。','这一战把冬木规则的两条边界推向前台：令咒可以直接迫使从者执行命令，而摧毁小圣杯只能中断这一次仪式。'], secret:'切嗣察觉圣杯实现其愿望的方式不可接受，以令咒命Saber破坏小圣杯。大圣杯仍在，泄出的黑泥酿成冬木大火；切嗣在灾后救出卫宫士郎。', refs:['zero','zguide','zstory','wiki']},
